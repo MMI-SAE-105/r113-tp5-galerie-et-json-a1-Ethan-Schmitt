@@ -69,9 +69,11 @@
   image:'https://picsum.photos/id/237/400/300',
   }">
     <h1>Galerie</h1>
+<img src="https://picsum.photos/id/237/400/300" alt="Miniature chiot"
+@click="image" />
 
 <p>lorem⇥</p>
-<div class="overlay">
+<div class="overlay" x-show="image" @click="image = null">
     <figure><img x-bind:src="image" alt="image 237... un chiot"></figure>
 </div>
 </body>

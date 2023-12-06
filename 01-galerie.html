@@ -65,11 +65,14 @@
         }
       </style>
 </head>
-<body x-data="{ image:'https://picsum.photos/id/237/400/300' }">
+<body x-data="{ 
+  image:'https://picsum.photos/id/237/400/300',
+  }">
     <h1>Galerie</h1>
+
 <p>lorem⇥</p>
 <div class="overlay">
-    <figure><img x-bind:="image" alt="image 237... un chiot"></figure>
+    <figure><img x-bind:src="image" alt="image 237... un chiot"></figure>
 </div>
 </body>
 </html>

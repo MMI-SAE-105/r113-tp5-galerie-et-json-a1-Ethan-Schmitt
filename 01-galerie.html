@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
 <style>
         .vrac {
           /* Mettez ici les paramètres */
@@ -64,11 +65,11 @@
         }
       </style>
 </head>
-<body>
+<body x-data="{ image:'https://picsum.photos/id/237/400/300' }">
     <h1>Galerie</h1>
 <p>lorem⇥</p>
 <div class="overlay">
-    <figure><img src="https://picsum.photos/id/237/400/300" alt="image 237... un chiot"></figure>
+    <figure><img x-bind:="image" alt="image 237... un chiot"></figure>
 </div>
 </body>
 </html>

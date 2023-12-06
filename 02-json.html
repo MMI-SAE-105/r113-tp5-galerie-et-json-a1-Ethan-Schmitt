@@ -1,4 +1,12 @@
 <!-- FILEPATH: /C:/Users/ethan/Documents/GitHub/r113-tp5-galerie-et-json-a1-Ethan-Schmitt/02-json.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
 <body>
 <h1>JSON</h1>
 <ul x-data="{
@@ -23,7 +31,7 @@
     <template x-for="obj in donnees">
         <li>
            <span x-text="obj.nom"></span>:
-            <a :href="obj.url" target="_blank" x-text="obj.projet"> </a>
+            <a :href="obj.url" target="_blank" x-text="obj.projet"></span> </a>
         </li>
     </template>
 </ul>
@@ -34,3 +42,4 @@
     },
 }"></ul>
 </body>
+</html>

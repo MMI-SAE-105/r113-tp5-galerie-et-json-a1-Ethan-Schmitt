@@ -70,11 +70,11 @@
   }">
     <h1>Galerie</h1>
 <img src="https://picsum.photos/id/237/400/300" alt="Miniature chiot"
-@click="image" />
+@click="image"='https://picsum.photos/id/237/400/300'/>
 
 <p>lorem⇥</p>
-<div class="overlay" x-show="image" @click="image = null">
-    <figure><img x-bind:src="image" alt="image 237... un chiot"></figure>
+<div class="overlay" x-show="image" @click="image = null" @keyup.escape.window="image = null">
+  <figure><img x-bind:src="image" alt="image 237... un chiot"></figure>
 </div>
 </body>
 </html>
